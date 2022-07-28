@@ -1,0 +1,38 @@
+# Yo
+
+import math
+
+# Choosing a sequence of numbers(1) or a single number(2)
+while True:
+    fib_input = input("If you want to see a sequence of numbers to your number press\u001b[1m 1 \u001b[0m\n"
+                      "If you just want to see the Nth number press\u001b[1m 2 \u001b[0m\n")
+    if fib_input == "1" or fib_input == "2":
+        break
+
+while True:
+    number_fib = input("Inter your number: ")
+    try:
+        if int(number_fib) >= 0:
+            break
+    except ValueError:
+        continue
+
+
+# Sequence of numbers
+if fib_input == "1":
+    if number_fib == "0":
+        print(0)
+    if number_fib == "1":
+        print(0, 1)
+    else:
+        a = 0
+        b = 1
+        for i in range(int(number_fib)):
+            print(a, end=' ')
+            a, b = b + a, a
+
+# Single number
+if fib_input == "2":
+    number_fib = int(number_fib)
+    phi = (1 + math.sqrt(5)) / 2
+    print(int(phi ** number_fib / math.sqrt(5) + 0.5))
