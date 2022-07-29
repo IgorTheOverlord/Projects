@@ -14,9 +14,9 @@ while True:
     # fib_input == 1
     if fib_input == "1":
         while True:
-            number_fib = input("Enter your number under 1000: ")
+            number_fib = input("Enter your number under 1001: ")
             try:
-                if 0 <= int(number_fib) < 1000:
+                if 0 <= int(number_fib) <= 1000:
                     break
             except ValueError:
                 continue
@@ -24,9 +24,9 @@ while True:
     # fib_input == 2
     else:
         while True:
-            number_fib = input("Enter your number under 1000000: ")
+            number_fib = input("Enter your number under 1000001: ")
             try:
-                if 0 <= int(number_fib) < 1000000:
+                if 0 <= int(number_fib) <= 1000000:
                     break
             except ValueError:
                 continue
