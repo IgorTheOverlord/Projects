@@ -3,6 +3,7 @@
 import math
 
 while True:
+
     # Choosing a sequence of numbers(1) or a single number(2)
     while True:
         fib_input = input("If you want to see a sequence of numbers to your number press\u001b[1m 1 \u001b[0m\n"
